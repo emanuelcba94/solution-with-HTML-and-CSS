@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- flavicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- title -->
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+  <main class="test">
+    <div class="test__container">
+      <!-- first section -->
+      <section class="test__result grid-flow">
+        <h1 class="test__title">Your Result</h1>
+        <div class="test__score">
+          <p><span>76</span> of 100</p>
+        </div>
+        <div class="test__rank">
+          <p class="test__success">Great</p>
+          <p class="test__description">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
+      <!-- second section -->
+      <section class="test__summary grid-flow">
+        <p class="test__title">Summary</p>
+        <div class="test__data grid-flow">
+          <!-- item 1 -->
+          <div class="test__items" data-item-type="item-reaction">
+            <div class="test__item--flex-group"> 
+              <img src="./assets/images/icon-reaction.svg" alt="icon" class="test__icon">
+              <p class="test__category test__category--reaction">Reaction</p>
+            </div>
+            <p class="test__item--score"><span>80</span> / 100</p>
+          </div>
+          <!-- item 2 -->
+          <div class="test__items" data-item-type="item-memory">
+            <div class="test__item--flex-group">
+              <img src="./assets/images/icon-memory.svg" alt="icon" class="test__icon">
+              <p class="test__category test__category--memory">Memory</p>
+            </div>
+            <p class="test__item--score"><span>92</span> / 100</p>
+          </div>
+          <!-- item 3 -->
+          <div class="test__items" data-item-type="item-verbal">
+            <div class="test__item--flex-group">
+              <img src="./assets/images/icon-verbal.svg" alt="icon" class="test__icon">
+              <p class="test__category test__category--verbal">Verbal</p>
+            </div>
+            <p class="test__item--score"><span>61</span> / 100</p>
+          </div>
+          <!-- item 4 -->
+          <div class="test__items" data-item-type="item-visual">
+            <div class="test__item--flex-group">
+              <img src="./assets/images/icon-visual.svg" alt="icon" class="test__icon">
+              <p class="test__category test__category--visual">Visual</p>
+            </div>
+            <p class="test__item--score"><span>72</span> / 100</p>
+          </div>
+        </div>
+        <!-- button -->
+        <button class="test__btn">Continue</button>
+      </section>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emanuel Bonardo</a>.
+  </div> -->
+</body>
+</html>
